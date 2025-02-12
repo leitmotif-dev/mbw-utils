@@ -46,3 +46,16 @@ public class Platform {
         return ProcessInfo.processInfo.operatingSystemVersion.minorVersion
     }
 }
+
+public extension CocoaFont {
+	static var defaultFontSize: CGFloat {
+	#if os(iOS)
+		return 17
+	#elseif os(macOS)
+		return 13
+	#else
+		fatalError("Unsupported platform")
+	#endif
+	}
+
+}

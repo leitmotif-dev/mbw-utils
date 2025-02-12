@@ -21,9 +21,9 @@ public class MBWAttributedStringHelper {
     
     public init() {}
 
-    public var normAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: 15.0, weight: .regular)]
-    public var boldAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: 15.0, weight: .bold)]
-    public var lightAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: 15.0, weight: .light)]
+	public var normAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: CocoaFont.defaultFontSize, weight: .regular)]
+    public var boldAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: CocoaFont.defaultFontSize, weight: .bold)]
+    public var lightAttrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : CocoaFont.systemFont(ofSize: CocoaFont.defaultFontSize, weight: .light)]
     public var other1Attrs: [NSAttributedString.Key : Any] = [:]
     public var other2Attrs: [NSAttributedString.Key : Any] = [:]
     public var other3Attrs: [NSAttributedString.Key : Any] = [:]
